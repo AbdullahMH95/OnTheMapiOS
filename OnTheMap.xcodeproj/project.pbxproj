@@ -7,21 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0152C3EA21E2983000EF8F7E /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0152C3E921E2983000EF8F7E /* UserInfo.swift */; };
+		0152C3EC21E29C5A00EF8F7E /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0152C3EB21E29C5A00EF8F7E /* Singleton.swift */; };
+		0152C3EE21E3CD6400EF8F7E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0152C3ED21E3CD6400EF8F7E /* MapViewController.swift */; };
+		0152C3F021E6355C00EF8F7E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0152C3EF21E6355C00EF8F7E /* TableViewController.swift */; };
+		0152C3F421E79D3D00EF8F7E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0152C3F321E79D3D00EF8F7E /* TableViewCell.swift */; };
 		01E9B22921C428360086234D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E9B22821C428360086234D /* AppDelegate.swift */; };
-		01E9B22B21C428360086234D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E9B22A21C428360086234D /* ViewController.swift */; };
+		01E9B22B21C428360086234D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E9B22A21C428360086234D /* LoginViewController.swift */; };
 		01E9B22E21C428360086234D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01E9B22C21C428360086234D /* Main.storyboard */; };
 		01E9B23021C4283A0086234D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01E9B22F21C4283A0086234D /* Assets.xcassets */; };
 		01E9B23321C4283A0086234D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01E9B23121C4283A0086234D /* LaunchScreen.storyboard */; };
+		01E9B23B21C443DB0086234D /* ParseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E9B23A21C443DB0086234D /* ParseAPI.swift */; };
+		01FA7EB921E84B9C00A0841F /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FA7EB821E84B9C00A0841F /* AddLocationViewController.swift */; };
+		01FA7EBB21E861EC00A0841F /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FA7EBA21E861EC00A0841F /* ConfirmViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0152C3E921E2983000EF8F7E /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		0152C3EB21E29C5A00EF8F7E /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		0152C3ED21E3CD6400EF8F7E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		0152C3EF21E6355C00EF8F7E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		0152C3F321E79D3D00EF8F7E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		01E9B22521C428360086234D /* OnTheMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnTheMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01E9B22821C428360086234D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		01E9B22A21C428360086234D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		01E9B22A21C428360086234D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		01E9B22D21C428360086234D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01E9B22F21C4283A0086234D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01E9B23221C4283A0086234D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01E9B23421C4283A0086234D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01E9B23A21C443DB0086234D /* ParseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseAPI.swift; sourceTree = "<group>"; };
+		01FA7EB821E84B9C00A0841F /* AddLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
+		01FA7EBA21E861EC00A0841F /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +54,7 @@
 		01E9B21C21C428360086234D = {
 			isa = PBXGroup;
 			children = (
+				0152C3F321E79D3D00EF8F7E /* TableViewCell.swift */,
 				01E9B22721C428360086234D /* OnTheMap */,
 				01E9B22621C428360086234D /* Products */,
 			);
@@ -55,8 +72,15 @@
 			isa = PBXGroup;
 			children = (
 				01E9B22821C428360086234D /* AppDelegate.swift */,
-				01E9B22A21C428360086234D /* ViewController.swift */,
+				01E9B22A21C428360086234D /* LoginViewController.swift */,
+				0152C3EF21E6355C00EF8F7E /* TableViewController.swift */,
+				01E9B23A21C443DB0086234D /* ParseAPI.swift */,
+				0152C3EB21E29C5A00EF8F7E /* Singleton.swift */,
+				0152C3E921E2983000EF8F7E /* UserInfo.swift */,
 				01E9B22C21C428360086234D /* Main.storyboard */,
+				01FA7EB821E84B9C00A0841F /* AddLocationViewController.swift */,
+				01FA7EBA21E861EC00A0841F /* ConfirmViewController.swift */,
+				0152C3ED21E3CD6400EF8F7E /* MapViewController.swift */,
 				01E9B22F21C4283A0086234D /* Assets.xcassets */,
 				01E9B23121C4283A0086234D /* LaunchScreen.storyboard */,
 				01E9B23421C4283A0086234D /* Info.plist */,
@@ -135,7 +159,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01E9B22B21C428360086234D /* ViewController.swift in Sources */,
+				0152C3EA21E2983000EF8F7E /* UserInfo.swift in Sources */,
+				0152C3F421E79D3D00EF8F7E /* TableViewCell.swift in Sources */,
+				0152C3F021E6355C00EF8F7E /* TableViewController.swift in Sources */,
+				0152C3EE21E3CD6400EF8F7E /* MapViewController.swift in Sources */,
+				01FA7EB921E84B9C00A0841F /* AddLocationViewController.swift in Sources */,
+				01FA7EBB21E861EC00A0841F /* ConfirmViewController.swift in Sources */,
+				01E9B22B21C428360086234D /* LoginViewController.swift in Sources */,
+				01E9B23B21C443DB0086234D /* ParseAPI.swift in Sources */,
+				0152C3EC21E29C5A00EF8F7E /* Singleton.swift in Sources */,
 				01E9B22921C428360086234D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,12 +315,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CW2P62U7A2;
 				INFOPLIST_FILE = OnTheMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Udacity.OnTheMap;
+				PRODUCT_BUNDLE_IDENTIFIER = Udacity.OnTheMapAbdullah;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,12 +333,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CW2P62U7A2;
 				INFOPLIST_FILE = OnTheMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Udacity.OnTheMap;
+				PRODUCT_BUNDLE_IDENTIFIER = Udacity.OnTheMapAbdullah;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

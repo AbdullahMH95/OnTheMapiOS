@@ -50,13 +50,13 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         ParseAPI.logout { (error, done) in
             if done {
                 DispatchQueue.main.async {
-                self.dismiss(animated: true, completion: nil)
+                    self.dismiss(animated: true, completion: nil)
                 }
             }
             else {
                 DispatchQueue.main.async {
-                let alertController = UIAlertController(title: "Error", message: error!, preferredStyle: .alert)
-                self.present(alertController, animated: true, completion: nil)
+                    let alertController = UIAlertController(title: "Error", message: error!, preferredStyle: .alert)
+                    self.present(alertController, animated: true, completion: nil)
                 }
             }
         }
@@ -95,26 +95,21 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         var annotations = [MKPointAnnotation]()
         for location in locations {
             let annotation = MKPointAnnotation()
+            
             if let last = location.lastName, let first = location.firstName {
                 annotation.title = "\(first) \(last)"
-            }
-            else {
-                annotation.title = "Unknown"
             }
             
             if let subtitle = location.mediaURL {
                 annotation.subtitle = subtitle
             }
-            else {
-                annotation.subtitle = "Unknown"
-            }
             
             if let lat = location.latitude, let long = location.longitude {
-                annotation.coordinate = CLLocationCoordinate2DMake(lat, long)
-            }
-            else {
+                annotation.coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
+            } else {
                 continue
             }
+            
             annotations.append(annotation)
         }
         self.mapView.addAnnotations(annotations)
@@ -122,24 +117,36 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
     }
     
-    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView)
-    {
-        if let annotationURL = view.annotation?.subtitle
-        {
-            guard let url = URL(string: annotationURL!) else {
-                return
-            }
-            
-            if #available(iOS 10.0, *) {
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
-            } else {
-                UIApplication.shared.openURL(url)
-            }
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        let reuseId = "pin"
+        
+        var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId) as? MKPinAnnotationView
+        
+        if pinView == nil {
+            pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+            pinView!.canShowCallout = true
+            pinView!.pinTintColor = .red
+            pinView!.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
         }
+        else {
+            pinView!.annotation = annotation
+        }
+        
+        return pinView
     }
     
     
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        if control == view.rightCalloutAccessoryView {
+            let app = UIApplication.shared
+            if let toOpen = view.annotation?.subtitle! {
+                app.openURL(URL(string: toOpen)!)
+            }
+        }
+    }
 }
+
 
 enum MapType: NSInteger {
     case StandardMap = 0

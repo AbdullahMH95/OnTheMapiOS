@@ -122,6 +122,22 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
     }
     
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView)
+    {
+        if let annotationURL = view.annotation?.subtitle
+        {
+            guard let url = URL(string: annotationURL!) else {
+                return
+            }
+            
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
+        }
+    }
+    
     
 }
 
